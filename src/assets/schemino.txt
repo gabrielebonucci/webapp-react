@@ -1,0 +1,19 @@
+----LOGICA-----
+
+src/
+
+pages/ (Contengono la logica "grossa" della pagina)
+
+HomePage.jsx (Il suo compito sarà: prendere la lista film e usare FilmCard N volte)
+
+DetailPage.jsx (Il suo compito sarà: capire quale film mostrare e stamparne i dettagli)
+
+components/ (Contengono i mattoncini riutilizzabili)
+
+Layout.jsx (La nostra cornice: Header + Footer + "buco" per le pagine)
+
+FilmCard.jsx (Il nostro stampino per la Home)
+
+Header.jsx (Potremmo anche separarlo dal Layout se diventa complesso)
+
+-----------------
