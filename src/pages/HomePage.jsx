@@ -29,12 +29,18 @@ const HomePage = () => {
     })
   }
   return (
-    <div>
-      <h1>Lista dei Film</h1>
+    <>
+      <div className="p-5 mb-4 bg-body-tertiary rounded-3">
+        <h1 className="display-5 fw-bold">Benvenuto</h1>
+        <p className="lead">Esplora la nostra collezione completa dei migliori film.</p>
+      </div>
+
+      <h2 className="mb-4">Catalogo</h2>
+
       <div className="row">
         {renderFilms()}
       </div>
-    </div>
+    </>
   )
 }
 

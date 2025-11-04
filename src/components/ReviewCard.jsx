@@ -5,7 +5,7 @@ const ReviewCard = ({ reviewProp }) => {
   const { author, text, vote } = reviewProp;
 
   return (
-    <div className="card mb-3">
+    <div className="card mb-3 border-0 shadow-sm">
       <div className="card-body">
         <p className="card-text">{text}</p>
         <footer className="blockquote-footer">
