@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Link, useParams, useNavigate } from 'react-router-dom'
 import ReviewCard from '../components/ReviewCard'
+import ReviewForm from "../components/ReviewForm"
+
 
 const DetailPage = () => {
 
@@ -62,7 +64,9 @@ const DetailPage = () => {
           <p>Non ci sono ancora recensioni per questo film.</p>
         )}
       </section>
-
+      <section>
+        <ReviewForm idProp={id} reloadReviews={fetchSingleFilm} />
+        </section>
       {/* Footer della Pagina */}
       <footer className="border-top pt-3">
         <Link className="btn btn-secondary" to="/">
