@@ -16,8 +16,7 @@ const ReviewForm = ({ idProp, reloadReviews }) => {
   };
 
   // endpoint API per l'invio della recensione
-  const apiUrl = `http://localhost:3000/api/films/${idProp}/reviews`;
-
+  const apiUrl = `http://localhost:3000/movies/${idProp}/reviews`;
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
