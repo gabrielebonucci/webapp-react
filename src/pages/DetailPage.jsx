@@ -45,7 +45,7 @@ const DetailPage = () => {
   };
   return (
     <div>
-      <header className="row mb-4 align-items-center">
+      <header className="row mb-4 align-items-center mt-4">
         <div className="col-md-4">
           <img
             src={`http://localhost:3000/${film?.image}`}
