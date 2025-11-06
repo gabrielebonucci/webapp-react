@@ -1,20 +1,18 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route } from "react-router-dom";
 
-import DefaultLayout from './layouts/DefaultLayout' 
-import HomePage from './pages/HomePage'
-import DetailPage from './pages/DetailPage'
+import DefaultLayout from "./layouts/DefaultLayout";
+import HomePage from "./pages/HomePage";
+import DetailPage from "./pages/DetailPage";
 
 function App() {
   return (
     <Routes>
       <Route element={<DefaultLayout />}>
-        
-        <Route index element={<HomePage />} />
-        <Route path="/film/:id" element={<DetailPage />} />
-
+        <Route path="/" element={<HomePage />} />
+        <Route path="/movies/:id" element={<DetailPage />} />
       </Route>
     </Routes>
-  )
+  );
 }
 
-export default App
+export default App;

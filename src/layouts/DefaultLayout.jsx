@@ -1,17 +1,21 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
-import Header from '../components/Header'
+import { Outlet } from "react-router-dom";
+import Header from "../components/Header";
+import { useGlobal } from "../context/GlobalContext";
+import Loader from "../components/Loader";
 
 const DefaultLayout = () => {
-  return (
-    <div className="d-flex flex-column min-vh-100">
-      <Header />
+  const { isLoading } = useGlobal();
 
-      <main className="container my-4 flex-grow-1">
+  return (
+    <>
+      <Header />
+      <main className="container">
         <Outlet />
       </main>
-    </div>
-  )
-}
+      {/* se var è true renderizza comp */}
+      {isLoading && <Loader />}
+    </>
+  );
+};
 
-export default DefaultLayout
+export default DefaultLayout;

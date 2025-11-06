@@ -6,7 +6,7 @@ const FilmCard = ({ filmProp }) => {
   const { id, title, abstract, image } = filmProp;
 
  return (
-    <Link to={`/film/${id}`} className="text-decoration-none text-dark">
+   <Link to={`/movies/${id}`} className="text-decoration-none text-dark">
         <div className="card h-100 border-0 shadow-sm">
         <img src={`http://localhost:3000/${image}`}
           className="card-img-top"
